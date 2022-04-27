@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#title{
+     
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: oblique;
+    color: rgb(25, 26, 51);
+}
+#main{
+    background-image: url('Viagem.jpg');
+    
+    width: 30%;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 10px;   
+}
+#name{
+    margin-top: 30px;
+}
+#lugares{
+    padding: 10px;
+    text-align: center;
+}
+#p1{
+    margin-left: 20px;
+   
+}
+#text-area{
+    padding: 10px;
+    text-align: center;
+}
+#date{
+    
+    margin-left: 20px;
+}
+#opcao1{
+    margin-left: 10px;
+    padding: 10px;
+}
+#opcao2{
+    margin-left: 20px;
+}
+#container-button{
+    text-align: right;
+    margin-right: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.nameAdjust{
+    padding: 5px;
+    margin-left: 5%;
+    font-style:italic  ;
+}
+.inputname-email{
+    padding:2px;
+    border-radius: 4px;
+
+}
+
