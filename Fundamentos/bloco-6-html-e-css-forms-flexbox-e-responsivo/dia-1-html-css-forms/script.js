@@ -1,5 +1,10 @@
-let button1 = document.getElementById('button1');
+let buttons = document.querySelectorAll('.buttons');
+console.log(buttons);
 function disabledefault(event){
-    event.preventDefault();
-    console.log(event.target);
-}button1.addEventListener('click', disabledefault);
+    for (let button of buttons){
+        button.addEventListener('click',function(event){console.log('ola');
+
+        })
+
+    } 
+}disabledefault();
