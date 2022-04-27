@@ -10,15 +10,25 @@
     font-style: oblique;
     color: rgb(25, 26, 51);
 }
+#teste{
+    background-image: url('Viagem.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
 #main{
     background-image: url('Viagem.jpg');
-    
+    background-repeat: no-repeat;
+    background-size:cover;
     width: 30%;
     height: 650px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
     border-radius: 10px;   
+    border-color: brown;
+    border-style: solid;
+    
 }
 #name{
     margin-top: 30px;
@@ -26,14 +36,28 @@
 #lugares{
     padding: 10px;
     text-align: center;
+    color: black;
+    font-weight: bold;
 }
 #p1{
     margin-left: 20px;
-   
+    color: rgb(222, 67, 0);
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    
+    
+    
 }
 #text-area{
     padding: 10px;
     text-align: center;
+}
+#textArea{
+    resize:none;
+    padding: 5px;
+    border-radius: 5px;
+    
+    
 }
 #date{
     
@@ -47,19 +71,38 @@
     margin-left: 20px;
 }
 #container-button{
-    text-align: right;
-    margin-right: 20px;
-    padding: 15px;
-    margin-bottom: 10px;
+    padding: 20px;
+    height: 50px;
+    
 }
-.nameAdjust{
+#box{
+    background-color: rgb(170, 223, 228);
+    width: 80%;
+    border-radius: 20px;
+    border-color: rgb(76, 87, 123);
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 13px;
     padding: 5px;
-    margin-left: 5%;
-    font-style:italic  ;
+    
+}
+
+.buttons{
+    padding: 5px;
+    font-style:oblique;
+    margin-left: 10px;
 }
 .inputname-email{
     padding:2px;
     border-radius: 4px;
+
+}
+.nameAdjust{
+    margin-left: 20px;
+    padding: 5px;
+    
 
 }
 
