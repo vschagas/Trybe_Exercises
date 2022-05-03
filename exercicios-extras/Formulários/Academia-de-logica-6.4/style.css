@@ -1,0 +1,102 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+
+body{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  
+  
+}
+
+main{
+  display: flex;
+  border: black solid 1px;
+  padding: 20px;
+  width: 90%;
+  border-radius: 8px;
+  background-color: rgb(165, 241, 203)
+  
+}
+
+.header-trybe{
+  width: 90%;
+  height: 80px;
+  border: black 1px solid;
+  margin: 25px 25px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  border-radius: 8px;
+  background-color: rgb(165, 241, 203);
+
+}
+
+.header-trybe img{
+  margin-top: 12px;
+  height: 70px;
+}
+
+
+
+.hotel-form, .list-section{
+  margin: 25px;
+  color: rgb(73, 73, 73);
+  font-size: 25px;
+  
+}
+
+button{
+  width: 30%;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+li{
+  text-align: left;
+  margin-bottom: 5px;
+  padding:10px;
+  font-size:25px;
+  border: black 1px solid;
+}
+
+ol{
+  display: inline-block;
+  list-style-type: none;
+  margin-top:15px;
+  width: 90%;
+}
+
+textarea{
+  box-sizing: content-box;
+  padding: 10px;
+}
+
+h1{
+  margin-left: 20px;
+}
+
+.form-section {
+  
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 25px;
+  border: 1px solid black;
+  border-radius: 2px;
+  
+}
+
+.hotel-form{
+  display: flex;
+  justify-items: flex-start;
+  border: 1px solid red;
+  align-self: flex-start;
+}
+
