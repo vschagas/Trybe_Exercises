@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel fazenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo hotel1.jpeg" alt="logo hotel">
+        <h1>Hotel fazenda</h1>
+    </header>
+    <main>
+        <section>
+            <form action="" method="get">
+                <section class="date">
+                    <h2>Reserve seu quarto!</h2>
+
+                    <label for="checkin">Check-in</label>
+                    <input type="date" name="" id="checkin">
+
+                    <label for="checkout">Check-out</label>
+                    <input type="date" name="" id="checkout">
+                </section>   
+                <section>
+                    <span> Quartos:</span>
+                    <label for="comum">Comum</label>
+                    <input type="radio" name="bedroom" id="comum" value="comum" class="nBedroom">
+
+                    <label for="club">Club</label>
+                    <input type="radio" name="bedroom" id="club" value="club" class="nBedroom">
+
+                    <label for="luxo">Club</label>
+                    <input type="radio" name="bedroom" id="luxo" value="luxo" class="nBedroom">
+
+                    <label for="nPessoas">Pessoas:</label>
+                    <select name="nPessoas" id="nPessoas">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <section>
+                        <textarea name="obs" id="obs" cols="50" rows="10" placeholder="Observação"></textarea>
+                    </section>
+                    <button type="submit" class="sendButton" >Reservar</button>
+                </section>  
+            </form>
+        </section>
+        <section>
+            <h2>Lista de reservas</h2>
+            <ol></ol>
+            <button type="submit" class="clean">Limpar</button>
+            <span class="nav-cart-icon nav-sprite"></span>
+        </section>
+
+
+    </main>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
