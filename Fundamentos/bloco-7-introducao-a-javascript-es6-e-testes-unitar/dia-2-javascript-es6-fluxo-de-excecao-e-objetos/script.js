@@ -1,8 +1,3 @@
-/* arrow = () => {
-    console.log('arrow');
-}
-arrow (); */
-
 const coolestTvShow = {
     name: "BoJack Horseman",
     genre: "adult animation",
@@ -12,7 +7,7 @@ const coolestTvShow = {
     seasons: 6,
   };
   
-    for (const property in coolestTvShow) {
-    console.log(property);
+  for ( const object in coolestTvShow) {
+      console.log(object)
   }
-  
+  console.log(coolestTvShow.name)
