@@ -23,9 +23,34 @@ const mage = {
 //   1 - Crie uma função que retorna o dano do dragão.
 // O dano será um número aleatório entre 15 (dano mínimo) e o valor do atributo strength (dano máximo).
 
-/* const damageDragon = () => {
-    const atack = Math.floor(Math.random() * (5 - 3)+ 3)+1
-    return atack
-};
-console.log(damageDragon()); */
+const damegeDragon = () => Math.floor(Math.random() * (dragon.strength - 15) + 15) 
+
+const damageWarrior = () => Math.floor(Math.random() *
+ ((warrior.strength * warrior.weaponDmg) - warrior.strength) + warrior.strength)
+
+const damegeMage = () =>{
+  
+  let mana1 =;
+  let damage =;
+  for( let index = mage.mana; index < mage.mana; index -= 15 ) {
+    mana = mana - 15;
+    mana1.push(mana)
+    const damage = (Math.floor(Math.random() * ((mage.intelligence*2) - mage.intelligence) + mage.intelligence))
+    damage.push(damage)
+  }
+
+return {Damege: damage,
+        Mana: mana
+}
+}
+
+console.log(damegeMage());
+
+
+
+// const forcaMege = () => ({
+  
+//   Damage: damegeMage(),
+//   Mana: (mage.mana - 15),
+// })
 
