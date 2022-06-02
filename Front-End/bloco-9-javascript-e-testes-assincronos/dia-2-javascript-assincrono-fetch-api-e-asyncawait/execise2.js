@@ -1,51 +1,29 @@
+const body = document.querySelector('body');
+body.style.backgroundColor = 'green';
 
-const trataDados = (data) => {
-  const filtred = data.filter(({ rank }) => rank <= 10)
-  const treatedValues = filtred.map(({ name, priceUsd, symbol}) => ({name,priceUsd, symbol}))
-  return console.log(treatedValues);
-}
 
-const body = document.querySelector('body')
+sendToHtml = (param) => {
+  const maped = param.map(({ name, priceUsd}) => ({ name, priceUsd}))
+  const filtred = maped.filter((element, index) => index <= 10)
+  console.log(maped);
 
-treatedValues.forEach(({ name, priceUsd, symbol}) => {
-  const div = document.createElement('div')
-  div.innerHTML = `A moeda ${name} que tem o preço em dolar ${priceUsd} e que tem o símbolo ${symbol}`
-  body.appendChild(div)
-});
+  filtred.forEach(({ name, priceUsd}) => {
+    const div = document.createElement('div')
+    div.className = 'moedas'
+    div.innerHTML = `A moeda ${name} no momento está custando ${priceUsd}`
+    body.appendChild(div)
+    
+  });
+ };
 
-const getApi = async() => {
-  try {
-const response = await fetch(`https://api.coincap.io/v2/assets`) 
-const dados = await response.json()
-trataDados(dados.data);
+const getApi = async () => {
+  try{
+  const response = await fetch(`https://api.coincap.io/v2/assets`);
+  const dados = await response.json();
+  sendToHtml(Object.values(dados)[0])
+// console.log(Object.values(dados)[0]);
   } catch (error) {
-    console.error(error)
+    console.log(error);
   }
 };
-getApi()
-
-
-// const cor = document.querySelector('#moedas')
-// const body = document.querySelector('body')
-
-
-
-// const fetchJoke = () => {
-//   const url = `https://api.coincap.io/v2/assets`
-
-//   fetch(url)
-//     .then((response) => response.json())
-//     .then((data) => arquivo(data) )
-    
-//   const arquivo = (data) =>{
-//     data.forEach(element => {
-      
-//       div = document.createElement('div')
-//       div.innerHtml = element
-//       body.appendChild(div)
-      
-//     });
-//   }
-
-// }
-// fetchJoke()
+window.onload = () => getApi()
